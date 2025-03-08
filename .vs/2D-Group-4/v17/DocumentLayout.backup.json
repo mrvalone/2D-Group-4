@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|c:\\users\\haven\\documents\\112\\project 2d\\2d-group-4\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|c:\\users\\haven\\documents\\112\\project 2d\\2d-group-4\\assets\\scripts\\swingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\swingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "playerController.cs",
+              "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\playerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
+              "ToolTip": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\playerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T18:00:20.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "swingController.cs",
+              "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\swingController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\swingController.cs",
+              "ToolTip": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\swingController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\swingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:39:01.423Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
