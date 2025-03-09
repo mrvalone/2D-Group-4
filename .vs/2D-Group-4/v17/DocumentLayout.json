@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|c:\\users\\haven\\documents\\112\\project 2d\\2d-group-4\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|c:\\users\\haven\\documents\\112\\project 2d\\2d-group-4\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|c:\\users\\haven\\documents\\112\\project 2d\\2d-group-4\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,19 +31,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "playerController.cs",
-              "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\playerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
-              "ToolTip": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\playerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
+              "ToolTip": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T18:00:20.99Z",
+              "WhenOpened": "2025-03-09T22:09:30.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UIController.cs",
+              "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\UIController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIController.cs",
+              "ToolTip": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\UIController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:02:02.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "playerController.cs",
+              "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\playerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
+              "ToolTip": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\playerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T18:00:20.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "swingController.cs",
               "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\swingController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\swingController.cs",
@@ -43,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\swingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T17:39:01.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T17:39:01.423Z"
             }
           ]
         }
