@@ -102,47 +102,50 @@ public class playerController : MonoBehaviour
             ChangeHp(-1);
             Debug.Log("bat hit - 1 damage");
         }
-        //if (collision.gameObject.CompareTag("torch"))
-        //{
-        //    if (itemHeld != "torch")
-        //    {
-        //        itemHeld = "torch";
-        //        itemCount = 1;
-        //    }
-        //    itemCount++;
-        //}
+        if (collision.gameObject.CompareTag("torch"))
+        {
+            if (itemHeld != "torch")
+            {
+                itemHeld = "torch";
+                itemCount = 1;
+            }
+            itemCount++;
+        }
 
-        //if (collision.gameObject.CompareTag("potion"))
-        //{
-        //    if (itemHeld != "potion")
-        //    {
-        //        itemHeld = "potion";
-        //        itemCount = 1;
-        //    }
-        //    itemCount++;
-        //}
+        if (collision.gameObject.CompareTag("potion"))
+        {
+            Destroy(collision.gameObject);
+            if (itemHeld != "potion")
+            {
+                itemHeld = "potion";
+                itemCount = 0;
+                Debug.Log("Potion Acquired");
+            }        
+            itemCount++;
+            Debug.Log("Potion Count: " + itemCount);
+        }
 
-        //if (collision.gameObject.CompareTag("chalk"))
-        //{
-        //    if (itemHeld != "chalk")
-        //    {
-        //        itemHeld = "chalk";
-        //        itemCount = 1;
-        //    }
-        //    itemCount++;
-        //}
+        if (collision.gameObject.CompareTag("chalk"))
+        {
+            if (itemHeld != "chalk")
+            {
+                itemHeld = "chalk";
+                itemCount = 1;
+            }
+            itemCount++;
+        }
     }
 
     private void Attack() //instantiates the prefab sword attack
     {
         if (faceRight) //checks to see which way the character is facing and offsets the hitbox in game space accordingly
         {
-            Instantiate(swordSwing, (gameObject.transform.position + new Vector3(1, 0, 0)), Quaternion.identity);
+            Instantiate(swordSwing, (gameObject.transform.position + new Vector3(1, 0, 0.5f)), Quaternion.identity); //instantiates relative to the character's position based on the direction he's facing
         }
 
         if (faceLeft)
         {
-            Instantiate(swordSwing, (gameObject.transform.position + new Vector3(-1, 0, 0)), Quaternion.identity);
+            Instantiate(swordSwing, (gameObject.transform.position + new Vector3(-1, 0, 0.5f)), Quaternion.identity);
         }
     }
 
@@ -215,7 +218,7 @@ public class playerController : MonoBehaviour
 
                 ChangeHp(3);
                 itemCount--;
-                
+                Debug.Log("Potion Used. Remaining: " +  itemCount);
                 break;
 
             case "chalk":

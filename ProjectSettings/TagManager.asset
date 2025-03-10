@@ -9,6 +9,9 @@ TagManager:
   - batCeiling
   - playerSwing
   - bat
+  - potion
+  - torch
+  - chalk
   layers:
   - Default
   - TransparentFX
