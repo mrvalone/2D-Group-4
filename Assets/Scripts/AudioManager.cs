@@ -4,18 +4,41 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
 
-    public static AudioManager instance;
+    public static AudioManager instance; // Singleton
 
     public AudioSource audioSource;
     public AudioClip menuMusic;
+    public AudioClip levelOneMusic;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         string currentLevel = SceneManager.GetActiveScene().name;
+
+        if (currentLevel == "MainMenu" || currentLevel == "HowToPlay") // Keep menu music playing between help and main menus
+        {
+            audioSource.clip = menuMusic;
+            audioSource.Play();
+        }
+        else if (currentLevel == "LevelOne")
+        {
+            audioSource.clip = levelOneMusic;
+            audioSource.Play();
+        }
     }
 
-    // Update is called once per frame
+    private void Awake() // Singleton
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Update()
     {
         
