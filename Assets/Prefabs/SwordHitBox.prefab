@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5753274204251321064}
   m_Layer: 0
   m_Name: SwordHitBox
-  m_TagString: Untagged
+  m_TagString: playerSwing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4029153454149584448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcad53f26b984844a64dd385294a00f, type: 3}
+  m_Script: {fileID: 11500000, guid: c08ab12ddc7775e409eb0de6d68179ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &5753274204251321064

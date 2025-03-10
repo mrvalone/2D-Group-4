@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - ground
+  - lantern
+  - batCeiling
+  - playerSwing
+  - bat
   layers:
   - Default
   - TransparentFX
