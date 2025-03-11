@@ -34439,6 +34439,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 6830542680825257915, guid: 2611cf9a725cab74aaccaef7e3fefcca, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1634170032, guid: cdc83fe1ffb214644a27047c5fb23701, type: 3}
+    - target: {fileID: 6830542680825257915, guid: 2611cf9a725cab74aaccaef7e3fefcca, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830542680825257915, guid: 2611cf9a725cab74aaccaef7e3fefcca, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776060840949756184, guid: 2611cf9a725cab74aaccaef7e3fefcca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776060840949756184, guid: 2611cf9a725cab74aaccaef7e3fefcca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776060840949756184, guid: 2611cf9a725cab74aaccaef7e3fefcca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8776060840949756184, guid: 2611cf9a725cab74aaccaef7e3fefcca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
