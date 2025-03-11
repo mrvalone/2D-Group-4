@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -105,15 +105,15 @@ TextureImporter:
         width: 32
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46b697bced705534c81b6fb562d74381
-      internalID: -1634170032
+      spriteID: ed685d6ff6223d34d9aac410ca082779
+      internalID: 1247875524
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 70e1cb02525a24a4599ad1f76c4f47d6
+    spriteID: 681b39a650ae5bb408147f72c536cf4f
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      healthpotion_0: -1634170032
+      healthpotion_0: 1247875524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
