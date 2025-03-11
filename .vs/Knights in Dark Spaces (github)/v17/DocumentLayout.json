@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\batcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\batcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|d:\\unity\\projects\\knights in dark spaces (github)\\assets\\scripts\\batcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\batcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BatController.cs",
               "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\BatController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BatController.cs",
               "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\BatController.cs",
               "RelativeToolTip": "Assets\\Scripts\\BatController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T05:05:22.101Z",
               "EditorCaption": ""
@@ -49,19 +49,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIController.cs",
               "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\UIController.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwA4AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T05:00:37.557Z"
+              "WhenOpened": "2025-03-10T05:00:37.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "playerController.cs",
               "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\playerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
               "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\playerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAIwNgAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T03:47:03.621Z",
               "EditorCaption": ""

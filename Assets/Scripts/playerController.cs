@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Analytics;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
@@ -9,12 +10,18 @@ public class playerController : MonoBehaviour
     public float accel; //responsiveness of left-right movement
     public float speedLimit; //max speed for left-right movement
     public float jumpHeight; //height of jump
-    public GameObject swordSwing;
+    public GameObject swordSwingR;
+    public GameObject swordSwingL;
     public GameObject chalkMark;
+    public AudioSource AudioSource;
+    public AudioClip swingSFX;
+    public AudioClip potionSFX;
+    public AudioClip damageSFX;
 
-    private string itemHeld;
+    private string itemHeld;  
     private int itemCount;
     private int hp;
+    private SpriteRenderer rend;
     private Rigidbody2D rb;
     private bool airBorn;
     private bool faceRight;
@@ -28,6 +35,7 @@ public class playerController : MonoBehaviour
         itemCount = 0;
         airBorn = false;
         rb = GetComponent<Rigidbody2D>();
+        rend = GetComponent<SpriteRenderer>();
         accel = 20.0f;
         speedLimit = 5.0f;
         jumpHeight = 11.0f;
@@ -48,12 +56,14 @@ public class playerController : MonoBehaviour
         {
             faceRight = true;
             faceLeft = false;
+            rend.flipX = true;
         }
 
         if (moveHorizontal < 0)
         {
             faceLeft = true;
             faceRight = false;
+            rend.flipX = false;
         }
 
     }
@@ -140,12 +150,14 @@ public class playerController : MonoBehaviour
     {
         if (faceRight) //checks to see which way the character is facing and offsets the hitbox in game space accordingly
         {
-            Instantiate(swordSwing, (gameObject.transform.position + new Vector3(1, 0, 0.5f)), Quaternion.identity); //instantiates relative to the character's position based on the direction he's facing
+            Instantiate(swordSwingR, (gameObject.transform.position + new Vector3(0.8f, 0, 0.5f)), Quaternion.Euler(new Vector3(0,0,90.0f))); //instantiates relative to the character's position based on the direction he's facing
+            AudioSource.PlayOneShot(swingSFX);
         }
 
         if (faceLeft)
         {
-            Instantiate(swordSwing, (gameObject.transform.position + new Vector3(-1, 0, 0.5f)), Quaternion.identity);
+            Instantiate(swordSwingL, (gameObject.transform.position + new Vector3(-0.8f, 0, 0.5f)), Quaternion.Euler(new Vector3(0, 0, -90.0f)));
+            AudioSource.PlayOneShot(swingSFX);
         }
     }
 

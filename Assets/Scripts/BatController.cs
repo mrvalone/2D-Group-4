@@ -7,6 +7,9 @@ using Random = UnityEngine.Random;
 public class BatController : MonoBehaviour
 {
 
+    public AudioSource AudioSource;
+    public AudioClip squeakSFX;
+    
     private Rigidbody2D rb;
     private bool batHeight;
     private IEnumerator death;
