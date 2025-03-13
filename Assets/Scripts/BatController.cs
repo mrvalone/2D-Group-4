@@ -60,7 +60,7 @@ public class BatController : MonoBehaviour
 
     IEnumerator DestroyBat(float wait)
     {
-        //batsfxhere
+        AudioSource.PlayOneShot(squeakSFX);
         yield return new WaitForSeconds(wait);
 
         Destroy(gameObject);
