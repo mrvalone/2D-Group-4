@@ -12,6 +12,7 @@ TagManager:
   - potion
   - torch
   - chalk
+  - levelEnd
   layers:
   - Default
   - TransparentFX

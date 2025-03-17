@@ -101,6 +101,11 @@ public class playerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("levelEnd")) // When the player hits the end of level block
+        {
+            SceneManager.LoadScene("LevelTwo");
+        }
+
         if (collision.gameObject.CompareTag("ground"))
         {
             airBorn = false;
@@ -213,7 +218,7 @@ public class playerController : MonoBehaviour
 
     private void GameOver()
     {
-        SceneManager.LoadScene("levelOne");
+        SceneManager.LoadScene("LevelOne");
     }
 
     private void UseItem()

@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|c:\\users\\haven\\documents\\112\\project 2d\\2d-group-4\\assets\\scripts\\batcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\batcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|c:\\users\\haven\\documents\\112\\project 2d\\2d-group-4\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B797EB6-DDD1-B415-FB79-3AC3E178FDEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BatController.cs",
+              "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\BatController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BatController.cs",
+              "ToolTip": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\BatController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BatController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwD4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:53:28.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Users\\haven\\Documents\\112\\Project 2D\\2D-Group-4\\Assets\\Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
