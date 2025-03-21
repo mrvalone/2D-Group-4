@@ -129,7 +129,8 @@ public class playerController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("potion"))
         {
-            Destroy(collision.gameObject);
+            collision.GetComponent<Animator>().SetTrigger("trigPCollect"); // Trigger pickup animation
+            collision.GetComponent<BoxCollider2D>().enabled = false; // Delete invisible potion collider
             if (itemHeld != "potion")
             {
                 itemHeld = "potion";
