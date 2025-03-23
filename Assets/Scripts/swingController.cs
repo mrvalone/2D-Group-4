@@ -10,13 +10,13 @@ public class swingController : MonoBehaviour
     
     void Start()
     {
-        deleter = (Deleter(0.1f)); //sets the coroutine and calls it with a tiny delay.
+        deleter = (Deleter(0.15f)); //sets the coroutine and calls it with a tiny delay.
         StartCoroutine(deleter);
     }
 
     private void Update()
     {
-        gameObject.transform.Rotate(new Vector3(0,0,-360.0f)*Time.deltaTime*4);
+        gameObject.transform.Rotate(new Vector3(0,0,-360.0f)*Time.deltaTime*3);
     }
 
     private IEnumerator Deleter(float Wait) //deletes the object quickly

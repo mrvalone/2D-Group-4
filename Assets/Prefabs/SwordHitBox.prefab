@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6355924097263131433}
   - component: {fileID: 1095928719220003581}
   - component: {fileID: 7399775002687219780}
-  - component: {fileID: 7476189700051448532}
+  - component: {fileID: 1216350602996470198}
   m_Layer: 0
   m_Name: SwordHitBox
   m_TagString: playerSwing
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 5816790580877639139}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.94, y: -1.87, z: 0}
-  m_LocalScale: {x: 4, y: 0.25, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -1732635410, guid: 36ec9b20a09cc92408c7b458a28202f9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08ab12ddc7775e409eb0de6d68179ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &7476189700051448532
-CircleCollider2D:
+--- !u!70 &1216350602996470198
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -136,4 +136,5 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Size: {x: 0.3, y: 1}
+  m_Direction: 0

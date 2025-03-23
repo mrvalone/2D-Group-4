@@ -13,6 +13,7 @@ TagManager:
   - torch
   - chalk
   - levelEnd
+  - lawrence
   layers:
   - Default
   - TransparentFX

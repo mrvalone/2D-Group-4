@@ -7,8 +7,7 @@ using UnityEngine.UIElements;
 public class playerController : MonoBehaviour
 {
     public Image heart1;
-    public float accel; //responsiveness of left-right movement
-    public float speedLimit; //max speed for left-right movement
+    public float speed; //max speed for left-right movement
     public float jumpHeight; //height of jump
     public GameObject swordSwingR;
     public GameObject swordSwingL;
@@ -23,6 +22,7 @@ public class playerController : MonoBehaviour
     private int hp;
     private SpriteRenderer rend;
     private Rigidbody2D rb;
+    private Animator anim;
     private bool airBorn;
     private bool faceRight;
     private bool faceLeft;
@@ -36,41 +36,25 @@ public class playerController : MonoBehaviour
         airBorn = false;
         rb = GetComponent<Rigidbody2D>();
         rend = GetComponent<SpriteRenderer>();
-        accel = 20.0f;
-        speedLimit = 5.0f;
-        jumpHeight = 11.0f;
+        anim = GetComponent<Animator>();
+        speed = 8.0f;
+        jumpHeight = 15.0f;
     }
 
     void FixedUpdate()
     {
-        //stores player input off the horizontal input axis
-        float moveHorizontal = Input.GetAxis("Horizontal");
-
-        //adds force to the player rigidbody if below the speed limit
-        if (rb.linearVelocityX < speedLimit && rb.linearVelocityX > (speedLimit *-1))
-        {
-            rb.AddForce(new Vector2(moveHorizontal, 0) * accel);
-        }
-
-        if (moveHorizontal > 0)
-        {
-            faceRight = true;
-            faceLeft = false;
-            rend.flipX = true;
-        }
-
-        if (moveHorizontal < 0)
-        {
-            faceLeft = true;
-            faceRight = false;
-            rend.flipX = false;
-        }
 
     }
 
     private void Update()
     {   
+        anim.SetBool("IsJumping", airBorn);
         
+        if (!airBorn)
+        {
+            anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocityX));
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && !airBorn)
         {
             rb.linearVelocityY = jumpHeight;
@@ -87,7 +71,33 @@ public class playerController : MonoBehaviour
         {
             UseItem();
         }
+
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.linearVelocityX = speed;
+            faceRight = true;
+            faceLeft = false;
+            rend.flipX = true;
+        }
         
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            rb.linearVelocityX = 0;
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.linearVelocityX = (speed * -1);
+            faceLeft = true;
+            faceRight = false;
+            rend.flipX = false;
+        }
+        
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            rb.linearVelocityX = 0;
+        }
 
     }
 
@@ -117,6 +127,13 @@ public class playerController : MonoBehaviour
             ChangeHp(-1);
             Debug.Log("bat hit - 1 damage");
         }
+
+        if (collision.gameObject.CompareTag("lawrence"))
+        {
+            ChangeHp(-2);
+            Debug.Log("lawrence hit - 2 damage");
+        }
+
         if (collision.gameObject.CompareTag("torch"))
         {
             if (itemHeld != "torch")
@@ -156,13 +173,13 @@ public class playerController : MonoBehaviour
     {
         if (faceRight) //checks to see which way the character is facing and offsets the hitbox in game space accordingly
         {
-            Instantiate(swordSwingR, (gameObject.transform.position + new Vector3(0.8f, 0, 0.5f)), Quaternion.Euler(new Vector3(0,0,90.0f))); //instantiates relative to the character's position based on the direction he's facing
+            Instantiate(swordSwingR, (gameObject.transform.position + new Vector3(0.9f, 0.4f, 0.5f)), Quaternion.Euler(new Vector3(0,0,65.0f))); //instantiates relative to the character's position based on the direction he's facing
             AudioSource.PlayOneShot(swingSFX);
         }
 
         if (faceLeft)
         {
-            Instantiate(swordSwingL, (gameObject.transform.position + new Vector3(-0.8f, 0, 0.5f)), Quaternion.Euler(new Vector3(0, 0, -90.0f)));
+            Instantiate(swordSwingL, (gameObject.transform.position + new Vector3(-0.9f, 0.4f, 0.5f)), Quaternion.Euler(new Vector3(0, 0, -65.0f)));
             AudioSource.PlayOneShot(swingSFX);
         }
     }
@@ -219,7 +236,7 @@ public class playerController : MonoBehaviour
 
     private void GameOver()
     {
-        SceneManager.LoadScene("LevelOne");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void UseItem()

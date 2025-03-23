@@ -45,7 +45,7 @@ public class BatController : MonoBehaviour
         if (collision.gameObject.CompareTag("playerSwing"))
         {
             Debug.Log("Bat is kill");
-            death = DestroyBat(1.0f);
+            death = DestroyBat(0.5f);
             StartCoroutine(death);
         }
     }
