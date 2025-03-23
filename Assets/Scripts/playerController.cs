@@ -108,6 +108,12 @@ public class playerController : MonoBehaviour
             airBorn = true;
             Debug.Log("airborn");
         }
+
+        if (collision.gameObject.CompareTag("crystal"))
+        {
+            Destroy(collision.gameObject);
+            // Acid rising method
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

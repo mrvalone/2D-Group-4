@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
@@ -13,10 +14,12 @@ public class BatController : MonoBehaviour
     private Rigidbody2D rb;
     private bool batHeight;
     private IEnumerator death;
+    private SpriteRenderer rend;
 
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        rend = gameObject.GetComponent<SpriteRenderer>();
         batHeight = false;
     }
 
@@ -32,7 +35,6 @@ public class BatController : MonoBehaviour
             rb.AddForceX(Random.Range(-50.0f, 50.0f));
             rb.AddForceY(Random.Range(-15.0f, 35.0f));
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,6 +49,17 @@ public class BatController : MonoBehaviour
             Debug.Log("Bat is kill");
             death = DestroyBat(0.5f);
             StartCoroutine(death);
+        }
+
+        rb.linearVelocityX *= -1;
+
+        if (rend.flipX)
+        {
+            rend.flipX = false;
+        }
+        else
+        {
+            rend.flipX = true;
         }
     }
 
