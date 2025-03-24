@@ -27,12 +27,12 @@ public class LawrenceController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("lawrenceBumper"))
         {
             rb.linearVelocityX *= -1;
-            
+
             if (rend.flipX)
             {
                 rend.flipX = false;
@@ -46,8 +46,7 @@ public class LawrenceController : MonoBehaviour
         if (collision.gameObject.CompareTag("playerSwing"))
         {
             Debug.Log("Lawrence is kill");
-            death = DestroyLawrence(0.5f);
-            StartCoroutine(death);
+            StartCoroutine(DestroyLawrence(0.5f));
         }
 
     }

@@ -17,6 +17,7 @@ TagManager:
   - crystal
   - acid
   - water
+  - lawrenceBumper
   layers:
   - Default
   - TransparentFX

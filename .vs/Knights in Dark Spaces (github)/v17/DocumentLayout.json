@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|d:\\unity\\projects\\knights in dark spaces (github)\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|d:\\unity\\projects\\knights in dark spaces (github)\\assets\\scripts\\lawrencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\lawrencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lawrencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\batcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|d:\\unity\\projects\\knights in dark spaces (github)\\assets\\scripts\\swingcontrollerleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\swingcontrollerleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\swingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\swingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\swingcontrollerleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\swingcontrollerleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1DDA9E7-E565-AF15-87EB-39EFEA41AF84}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,47 +48,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\LawrenceController.cs",
               "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\LawrenceController.cs",
               "RelativeToolTip": "Assets\\Scripts\\LawrenceController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T16:41:29.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "swingControllerLeft.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingControllerLeft.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\swingControllerLeft.cs",
-              "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingControllerLeft.cs",
-              "RelativeToolTip": "Assets\\Scripts\\swingControllerLeft.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:35:32.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "swingController.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\swingController.cs",
-              "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\swingController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:24:27.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "playerController.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\playerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
-              "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\playerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAwwH4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T03:47:03.621Z",
               "EditorCaption": ""
             },
             {
@@ -99,10 +61,48 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\BatController.cs",
               "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\BatController.cs",
               "RelativeToolTip": "Assets\\Scripts\\BatController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T05:05:22.101Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "swingController.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\swingController.cs",
+              "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\swingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:24:27.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "playerController.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\playerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
+              "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\playerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
+              "ViewState": "AgIAAHgBAAAAAAAAAAAQwH0BAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T03:47:03.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "swingControllerLeft.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingControllerLeft.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\swingControllerLeft.cs",
+              "ToolTip": "D:\\Unity\\Projects\\Knights in Dark Spaces (github)\\Assets\\Scripts\\swingControllerLeft.cs",
+              "RelativeToolTip": "Assets\\Scripts\\swingControllerLeft.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:35:32.14Z"
             },
             {
               "$type": "Document",

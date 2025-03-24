@@ -1069,7 +1069,7 @@ MonoBehaviour:
     venture, the more odd the cave becomes. The beast may not be what it seems...\r\n\r\nThe
     cave calls to thee, but its secrets are perilous to uncover. Choose wisely, for
     in the darkness, not all is as it seems.\n\nControls\nAD - Movement\nClick -
-    Attack\nSpace - Jump"
+    Attack\nSpace - Jump\nC - Chalk Mark\nR - Drink Potion"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9e017353c8c92b64fb5da59ed8a5062b, type: 2}
   m_sharedMaterial: {fileID: 8529732928545002221, guid: 9e017353c8c92b64fb5da59ed8a5062b, type: 2}

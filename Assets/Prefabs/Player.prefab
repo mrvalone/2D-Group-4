@@ -132,15 +132,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab4a42f7f8ebcd4db38a87054f7dec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
+  fullHeart: {fileID: 242230654, guid: 59018721c6c59424284fbe400e81bcb3, type: 3}
+  heart3_4: {fileID: -1041074172, guid: 834b49ed87db88546b489a2b0a4ac85a, type: 3}
+  heart1_2: {fileID: 1435125305, guid: 527f43a7bda49184d8624fd98aa933e9, type: 3}
+  heart1_4: {fileID: -222289503, guid: cda567e2a775fde4296313de5e305557, type: 3}
   speed: 0
   jumpHeight: 0
   swordSwingR: {fileID: 5816790580877639139, guid: b070f1cb1e2f36c4698c85499f8b2dfd, type: 3}
   swordSwingL: {fileID: 6716462825236309178, guid: 5eaf186b75b3a8f439a1c786782652f3, type: 3}
-  chalkMark: {fileID: 0}
+  chalkMark: {fileID: 5965847499082737739, guid: a13e89fda727fcf4b9d3a4288ed9d467, type: 3}
   AudioSource: {fileID: 0}
+  jumpSFX: {fileID: 0}
   swingSFX: {fileID: 0}
   potionSFX: {fileID: 0}
+  drinkSFX: {fileID: 0}
   damageSFX: {fileID: 0}
+  crystalSFX: {fileID: 0}
+  splashSFX: {fileID: 0}
+  landSFX: {fileID: 0}
 --- !u!61 &7367477329785217253
 BoxCollider2D:
   m_ObjectHideFlags: 0
