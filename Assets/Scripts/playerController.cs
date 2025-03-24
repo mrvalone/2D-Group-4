@@ -13,9 +13,14 @@ public class playerController : MonoBehaviour
     public GameObject swordSwingL;
     public GameObject chalkMark;
     public AudioSource AudioSource;
+    public AudioClip jumpSFX;
     public AudioClip swingSFX;
     public AudioClip potionSFX;
+    public AudioClip drinkSFX;
     public AudioClip damageSFX;
+    public AudioClip crystalSFX;
+    public AudioClip splashSFX;
+    public AudioClip landSFX;
 
     private string itemHeld;  
     private int itemCount;
@@ -39,6 +44,18 @@ public class playerController : MonoBehaviour
         anim = GetComponent<Animator>();
         speed = 8.0f;
         jumpHeight = 15.0f;
+
+        string currentLevel = SceneManager.GetActiveScene().name;
+
+        if (currentLevel == "LevelOne")
+        {
+            AudioManager.instance.StopMusic("LevelOne");
+        }
+        else if (currentLevel == "LevelTwo")
+        {
+            AudioManager.instance.StopMusic("LevelTwo");
+        }
+
     }
 
     void FixedUpdate()
@@ -60,6 +77,8 @@ public class playerController : MonoBehaviour
             rb.linearVelocityY = jumpHeight;
             airBorn = true;
             Debug.Log("jumped");
+            AudioSource.clip = jumpSFX;
+            AudioSource.Play();
         }
 
         if (Input.GetKeyUp(KeyCode.Mouse0))
@@ -70,6 +89,7 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.R))
         {
             UseItem();
+            AudioSource.PlayOneShot(drinkSFX);
         }
 
 
@@ -112,7 +132,7 @@ public class playerController : MonoBehaviour
         if (collision.gameObject.CompareTag("crystal"))
         {
             Destroy(collision.gameObject);
-            // Acid rising method
+            AudioSource.PlayOneShot(crystalSFX);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -126,6 +146,8 @@ public class playerController : MonoBehaviour
         {
             airBorn = false;
             Debug.Log("touching grass");
+            AudioSource.clip = landSFX;
+            AudioSource.Play();
         }
 
         if (collision.gameObject.CompareTag("bat"))
@@ -154,6 +176,9 @@ public class playerController : MonoBehaviour
         {
             collision.GetComponent<Animator>().SetTrigger("trigPCollect"); // Trigger pickup animation
             collision.GetComponent<BoxCollider2D>().enabled = false; // Delete invisible potion collider
+
+            AudioSource.PlayOneShot(potionSFX);
+
             if (itemHeld != "potion")
             {
                 itemHeld = "potion";
@@ -173,6 +198,20 @@ public class playerController : MonoBehaviour
             }
             itemCount++;
         }
+
+        if (collision.gameObject.CompareTag("acid"))
+        {
+            ChangeHp(-2);
+            AudioSource.clip = splashSFX;
+            AudioSource.Play();
+            Debug.Log("Acid - 2 damage");
+        }
+
+        if (collision.gameObject.CompareTag("water"))
+        {
+            AudioSource.clip = splashSFX;
+            AudioSource.Play();
+        }
     }
 
     private void Attack() //instantiates the prefab sword attack
@@ -180,19 +219,19 @@ public class playerController : MonoBehaviour
         if (faceRight) //checks to see which way the character is facing and offsets the hitbox in game space accordingly
         {
             Instantiate(swordSwingR, (gameObject.transform.position + new Vector3(0.9f, 0.4f, 0.5f)), Quaternion.Euler(new Vector3(0,0,65.0f))); //instantiates relative to the character's position based on the direction he's facing
-            AudioSource.PlayOneShot(swingSFX);
         }
 
         if (faceLeft)
         {
             Instantiate(swordSwingL, (gameObject.transform.position + new Vector3(-0.9f, 0.4f, 0.5f)), Quaternion.Euler(new Vector3(0, 0, -65.0f)));
-            AudioSource.PlayOneShot(swingSFX);
         }
+        AudioSource.PlayOneShot(swingSFX);
     }
 
     private void ChangeHp(int change) //changes HP by the amount passed as parameter. Pass negative values to reduce HP
     {
         hp += change;
+        AudioSource.PlayOneShot(damageSFX);
 
         if(hp <= 0)
         {

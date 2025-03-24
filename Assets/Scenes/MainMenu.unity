@@ -249,6 +249,7 @@ MonoBehaviour:
   audioSource: {fileID: 212407155}
   menuMusic: {fileID: 8300000, guid: 8ea4eb8e2f88e704f86a0c39c890c0c2, type: 3}
   levelOneMusic: {fileID: 8300000, guid: 5e06b0c37402d674e867af42ab1f2da3, type: 3}
+  levelTwoMusic: {fileID: 8300000, guid: a3e88219ce183834bb99d008b96c3325, type: 3}
 --- !u!4 &212407157
 Transform:
   m_ObjectHideFlags: 0

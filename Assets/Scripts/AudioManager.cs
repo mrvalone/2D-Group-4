@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip menuMusic;
     public AudioClip levelOneMusic;
+    public AudioClip levelTwoMusic;
 
     void Start()
     {
@@ -19,12 +20,22 @@ public class AudioManager : MonoBehaviour
             audioSource.clip = menuMusic;
             audioSource.Play();
         }
-        else if (currentLevel == "LevelOne")
+    }
+
+    public void StopMusic(string levelMusic)
+    {
+        audioSource.Stop();
+        if (levelMusic == "LevelOne")
         {
             audioSource.clip = levelOneMusic;
             audioSource.Play();
         }
-    }
+        else if (levelMusic == "LevelTwo")
+        {
+            audioSource.clip = levelTwoMusic;
+            audioSource.Play();
+        }
+    }    
 
     private void Awake() // Singleton
     {
